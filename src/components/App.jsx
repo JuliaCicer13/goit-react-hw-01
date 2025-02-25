@@ -1,21 +1,20 @@
-import './App.css'
-import Product from './Product';
+import './App.module.css'
+import Profile from './Profile.jsx';
+import userData from "../userData.json";
 
-export default function App() {
+
+export default function App () {
+  const {username, tag, location, avatar, status } = userData;
   return (
-    <div>
-      <h1>Best selling</h1>
-
-      <Product 
-       name="Tacos With Lime"
-       price={10.99}
+    <>
+      <Profile
+        name={username}
+        tag={tag}
+        location={location}
+        image={avatar}
+        stats={status}
       />
-      <Product 
-        name="Fries and Burger"
-        imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
-        price={14.29}
-      />
-    </div>
+    </>
   );
-}
+};
 
