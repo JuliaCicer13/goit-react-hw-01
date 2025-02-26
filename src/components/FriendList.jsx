@@ -1,9 +1,9 @@
-import styles from './FriendList.module.css'
-import FriendListItem from './FriendListItem';
+import styles from './FriendListItem.module.css'
+import FriendListItem from './FriendListItem.jsx';
 
 export default function FriendList({friends}) {
     return (
-      <ul className={styles.FriendList}>
+      <ul className={styles.list}>
      
       {friends.map(friend => (
         <FriendListItem
