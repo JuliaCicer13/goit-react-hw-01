@@ -69,8 +69,10 @@ button:focus-visible {
 /* src/index.css */
 
 body {
+  margin: 0 auto;
   font-family: sans-serif;
   line-height: 1.5;
+  align-items: center;
 }
 
 h1,
